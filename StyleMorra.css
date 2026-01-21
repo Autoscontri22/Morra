@@ -1,0 +1,17 @@
+/* style.css (ridotto + responsive) */
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,Arial,sans-serif;max-width:800px;padding:16px;margin-inline:auto}
+header{margin-bottom:12px}
+h1{margin:0 0 6px}
+
+header+div{display:flex;gap:10px;flex-wrap:wrap;margin:10px 0}
+button{padding:10px 14px;border:1px solid #bbb;border-radius:10px;background:#f4f4f4;cursor:pointer}
+button:hover{background:#eaeaea}
+
+#user,#computer,#contatore,#esito{padding:10px;border:1px solid #ddd;border-radius:10px;margin:8px 0}
+#contatore{font-weight:700}
+
+@media (max-width:520px){
+  header+div{flex-direction:column}
+  button{width:100%}
+}
