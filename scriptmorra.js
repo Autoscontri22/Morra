@@ -107,7 +107,9 @@ function computerPlay(){
 function checkWinner(){
 	if(userScore!=5){
 		if(computerScore==5){
+			for(int i=0; i<100; i++;){
 			alert("GRANDISSIMO CONIGLIO HAI PERSO 5 A " + userScore);
+			}
 			computerScore=0;
 			userScore=0;
 			document.getElementById("contatore").textContent =
@@ -117,7 +119,9 @@ function checkWinner(){
 		}
 	}
 	else if(computerScore==5){
+		for(int i=0; i<100; i++;){
 		alert("CONIGLIETTO HAI PAREGGIATO");
+		}
 		computerScore=0;
 		userScore=0;
 		document.getElementById("contatore").textContent =
@@ -126,7 +130,9 @@ function checkWinner(){
 		document.getElementById("esito").textContent = "Nuova partita: fai la tua scelta :)";
 	}
 	else{
+		for(int i=0; i<100; i++;){
 		alert("PER STAVOLTA HAI VINTO 5 A " + computerScore);
+		}
 		computerScore=0;
 		userScore=0;
 		document.getElementById("contatore").textContent =
@@ -135,3 +141,4 @@ function checkWinner(){
 		document.getElementById("esito").textContent = "Nuova partita: fai la tua scelta :)";
 	}
 }
+
